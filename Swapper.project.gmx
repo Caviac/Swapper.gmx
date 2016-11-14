@@ -18,10 +18,13 @@
     <script>scripts\scr_swap.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_wall</object>
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_player</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_bullet</object>
+    <objects name="Walls">
+      <object>objects\obj_wallMoving</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <object>objects\obj_player</object>
     <objects name="Swap Items">
       <object>objects\obj_swapBlock</object>
     </objects>
