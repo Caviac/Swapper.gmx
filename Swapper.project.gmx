@@ -8,29 +8,55 @@
   <sprites name="sprites">
     <sprite>sprites\spr_black</sprite>
     <sprite>sprites\spr_white</sprite>
-    <sprite>sprites\spr_pink</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprites name="Swap">
+      <sprite>sprites\spr_swapBlock</sprite>
+      <sprite>sprites\spr_swapBlockGrav</sprite>
+      <sprite>sprites\spr_swapPoint</sprite>
+    </sprites>
+    <sprite>sprites\spr_roomEnd</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_shoot.gml</script>
     <script>scripts\scr_swap.gml</script>
+    <script>scripts\scr_movingPlatform.gml</script>
+    <script>scripts\scr_playerDeath.gml</script>
+    <script>scripts\scr_roomEnd.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_control</object>
-    <object>objects\obj_bullet</object>
     <objects name="Walls">
       <object>objects\obj_wallMoving</object>
       <object>objects\obj_wall</object>
     </objects>
-    <object>objects\obj_player</object>
     <objects name="Swap Items">
       <object>objects\obj_swapBlock</object>
+      <object>objects\obj_swapBlockGrav</object>
+      <object>objects\obj_swapPoint</object>
+      <object>objects\obj_swapMoving</object>
+    </objects>
+    <objects name="Misc">
+      <object>objects\obj_control</object>
+      <object>objects\obj_roomEnd</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+      <object>objects\obj_bullet</object>
+    </objects>
+    <objects name="Parents">
+      <object>objects\obj_crushDeath</object>
+      <object>objects\obj_movingPlatform</object>
+      <object>objects\obj_bulletDestroy</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\death</timeline>
+  </timelines>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Level001</room>
+    <room>rooms\Level000</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
